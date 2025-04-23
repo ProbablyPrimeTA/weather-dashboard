@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { cityWeatherData, cityHourlyForecasts, cityWeeklyForecasts, weatherHistory, WeatherData, HourlyForecast } from '../data/mockData';
+import { cityWeatherData, cityHourlyForecasts, weatherHistory, WeatherData, HourlyForecast } from '../data/mockData';
 import { SunIcon, CloudIcon } from '@heroicons/react/24/outline';
 import { CloudIcon as CloudRainIcon } from '@heroicons/react/24/solid';
 import WeatherChart from './WeatherChart';
@@ -52,7 +52,7 @@ const validateWeatherData = (data: WeatherData | undefined): boolean => {
 export default function WeatherDashboard() {
   const [location, setLocation] = useState('Visselhövede');
   const [compareLocation] = useState<string | null>('Bremen');
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
   const currentWeather: WeatherData | undefined = cityWeatherData[location];
