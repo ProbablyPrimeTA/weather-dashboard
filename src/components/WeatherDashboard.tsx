@@ -51,7 +51,7 @@ const validateWeatherData = (data: WeatherData | undefined): boolean => {
 
 export default function WeatherDashboard() {
   const [location, setLocation] = useState('Visselhövede');
-  const [compareLocation, setCompareLocation] = useState<string | null>('Bremen');
+  const [compareLocation] = useState<string | null>('Bremen');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
@@ -107,7 +107,7 @@ export default function WeatherDashboard() {
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 p-4 sm:p-6 md:p-8">
       <div className="container mx-auto max-w-7xl space-y-6 sm:space-y-8">
         <h1 className="text-3xl sm:text-4xl font-bold weather-heading text-center mb-2 hover:scale-105 transition-transform duration-300 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">
-          Bene's Wetter Dashboard
+          Bene&apos;s Wetter Dashboard
         </h1>
         
         {/* Hauptbox mit aktuellen Wetterdaten */}
