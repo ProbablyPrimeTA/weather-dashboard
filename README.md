@@ -1,10 +1,10 @@
 # Bene's Wetter Dashboard
 
-Ein modernes, interaktives Wetter-Dashboard entwickelt mit Next.js und Tailwind CSS.
+Ein modernes, interaktives Wetter-Dashboard entwickelt mit Next.js und Tailwind CSS. Nur für Bene.
 
 ## Features
 
-- 🌡️ Aktuelle Wetterinformationen
+- 🌡️ Aktuelle Wetterinformationen (Nicht wirklich, derzeit platzhalter. Wetter API kann aber hinzugefügt werden.)
 - 🌅 Sonnenauf- und Untergangszeiten
 - 💨 Windgeschwindigkeit und Luftfeuchtigkeit
 - 🌧️ Regenwahrscheinlichkeit
